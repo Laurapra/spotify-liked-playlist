@@ -1,11 +1,11 @@
 import os
 import requests
-from fastapi import FastApi, Request
+from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse
 from dotenv import load_dotenv
 
 load_dotenv()
-app=FastApi()
+app=FastAPI()
 
 CLIENT_ID=os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET=os.getenv("SPOTIFY_CLIENT_SECRET")
